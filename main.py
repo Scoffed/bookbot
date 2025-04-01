@@ -13,7 +13,7 @@ def get_book_text(path_to_file):
         return file_contents
 
     
-def main(file_path="books/frankenstein.txt"):
+def main(file_path):
     num_words = count_words(get_book_text(file_path))
     char_nums = count_char(get_book_text(file_path))
     report = sort_dict(char_nums)
