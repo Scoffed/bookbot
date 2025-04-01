@@ -13,12 +13,12 @@ def get_book_text(path_to_file):
         return file_contents
 
     
-def main(file_path):
-    num_words = count_words(get_book_text(file_path))
-    char_nums = count_char(get_book_text(file_path))
+def main(path_to_file):
+    num_words = count_words(get_book_text(path_to_file))
+    char_nums = count_char(get_book_text(path_to_file))
     report = sort_dict(char_nums)
     print("============ BOOKBOT ============")
-    print(f"Analyzing book found at {file_path}")
+    print(f"Analyzing book found at {path_to_file}")
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
@@ -29,4 +29,4 @@ def main(file_path):
 
 
 
-main()
+main(sys.argv[1])
