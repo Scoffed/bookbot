@@ -1,7 +1,3 @@
-
-
-
-
 def count_words(text):
     num_words = 0
     for word in text.split():
